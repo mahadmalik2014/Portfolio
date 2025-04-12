@@ -161,3 +161,60 @@ color: white;
     height: 400px;
     width: 250px;
 }
+
+.Article h1{
+    text-align: center;
+}
+
+.Article h1:hover{
+    background-color: orangered;
+    box-shadow: 0 0 25px orangered;
+    color: white;
+}
+.Article button{
+margin-left: 80px;
+}
+.Article button:hover{
+    background-color: orangered;
+    box-shadow: 0 0 10px orangered;
+    color:white;
+}
+.Media{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 1500px;
+}
+.Media h1{
+    text-align: center;
+}
+
+.Media h1:hover{
+    background-color: orangered;
+    box-shadow: 0 0 25px orangered;
+    transform: scale(1.1);
+}
+.row1 iframe{
+    background-color: black;
+    height: 200px;
+    width: 400px;
+border-radius: 20px;
+}
+.row1 iframe:hover{
+    box-shadow: 0 0 25px orangered,0 0 25px orangered;
+}
+.Contact1 h1{
+    text-align: center;
+}
+
+.Contact1 h1:hover{
+    background-color:orangered;
+    box-shadow: 0 0 25px orangered;
+    transform:scale(1.1);
+}
+.Contact1 col-md-4{
+    margin-left: 100px;
+    margin-right: 100px;
+ display: flex; 
+ justify-content: space-between;  
+}
