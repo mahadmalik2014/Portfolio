@@ -183,7 +183,7 @@ margin-left: 80px;
     background-color: black;
     color: white;
     width: 100%;
-    height: 1500px;
+    height: 1200px;
 }
 .Media h1{
     text-align: center;
@@ -218,18 +218,18 @@ border-radius: 20px;
  display: flex; 
  justify-content: space-between;  
 }
-.Book{
+.contact_form form{
     text-align: center;
     max-width:500px;
-    margin: 16px;
+    margin: 16px auto;
 }
-.Book .input_box{
+.contact_form form .input_box{
  display: flex;   
  justify-content: center;
  flex-wrap: wrap;
 }
 
-.Book .input_box input,.Book .input_box textarea {
+.contact_form form .input_box input,.contact_form form textarea {
 width:100%;
 padding:10px;
 font-size: 20px;
@@ -249,4 +249,21 @@ resize: none;
 .Send:hover{
     background-color: orangered;
     color: black;
+}
+
+.contact_form{
+    text-align: center;
+    margin-top: 5px;
+ background-color: white; 
+ color: black;
+ font-size: 36px;
+}
+
+.contact_form iframe{
+margin-top:20px;
+}
+
+.container1{
+    display: flex;
+    flex-wrap: wrap;
 }

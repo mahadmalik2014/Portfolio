@@ -8,6 +8,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="Portfolio.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="Portfolio.js">
+        
+    </script>
 
  
 
@@ -20,6 +23,16 @@
 <!-- Latest compiled JavaScript -->
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "ft0kwsaJVEg-hH29m",
+      });
+   })();
+</script>
 </head>
 <body>
     <header class="header">
@@ -185,41 +198,42 @@ In addition to my current role, I am a Faculty Affiliate at the Middle East Init
 Contact Me
     </h1>
     <div class="Contact">
-        <div  class="col-md-4" style="border:1px solid black;">
-            <i class="fa-solid fa-location-dot"></i>
+        <div  class="col-md-4" style="border:1px solid black; height:180px;">
             <br>
-            <h2>Main Office</h2><br>
-            <h3>1300 I St NW
+            <h2 style="text-align: center;"><i class="fa-solid fa-location-dot"></i>Main Office</h2>
+            <h3 style="text-align: center;">1300 I St NW
                 Ste 200
                 Washington, DC  20005
                 United States
             </h3>
         </div>
-        <div class="col-md-4" style="border:1px solid black;">
-            <i class="fa-solid fa-envelope"></i>
+        <div class="col-md-4" style="border:1px solid black;height:180px;">
             <br>
-            <h2>Email</h2>
-            <h3>ammar.annees@gmail.com</h3>
+            <h2 style="text-align:center;"><i class="fa-solid fa-envelope"></i>Email</h2>
+            <h3 style="text-align:center;">ammar.annees@gmail.com</h3>
         </div>
-        <div class="col-md-4" style="border:1px solid black;">
-            <i class="fa-solid fa-phone"></i>
+        <div class="col-md-4" style="border:1px solid black;height:180px;">
+           
             <br>
-            <h2>Phone</h2>
-            <h3>+1 [571]-356-5539</h3>
+            <h2 style="text-align:center;"> <i class="fa-solid fa-phone"></i>Phone</h2>
+            <h3 style="text-align:center;">+1 [571]-356-5539</h3>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6210.0045517162325!2d-77.0326737244372!3d38.90106327172325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b7942d1fb739%3A0x5dc12e623301a2c1!2s1300%20I%20St%20NW%2C%20Washington%2C%20DC%2020005!5e0!3m2!1sen!2sus!4v1744466525651!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        </section>
+        <section class="contact_form" id="contact">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6210.0045517162325!2d-77.0326737244372!3d38.90106327172325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b7942d1fb739%3A0x5dc12e623301a2c1!2s1300%20I%20St%20NW%2C%20Washington%2C%20DC%2020005!5e0!3m2!1sen!2sus!4v1744466525651!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <h2>Book an Appointment</h2>
         <form class="Book">
         <div class="input_box">
-            <h3>Your name</h3><input type="text" placeholder="Enter your name">
-            <h3>Your email</h3><input type="email" placeholder="Enter your email">
-            <h3>Subject</h3><input type="text" placeholder="Subject">
-            <h3>The message</h3><textarea cols="30" rows="10" placeholder="Your message"></textarea>
-            <button class="Send">Send</button>
+            <h3>Your name</h3><input type="text" id="name" placeholder="Enter your name">
+            <h3>Your email</h3><input type="email" id="email" placeholder="Enter your email">
+            <h3>Subject</h3><input type="text"id="subject" placeholder="Subject">
+            <h3>The message</h3><textarea cols="30"id="message" rows="10" placeholder="Your message"></textarea>
+            <button class="Send" onclick="Send()">Send</button>
         </div>
         </form>
-    </div>
-  </section>
+    </section>
+    
 
 </body>
 </html>
