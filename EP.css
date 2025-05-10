@@ -1,0 +1,139 @@
+*{
+ margin:0;
+ padding: 0; 
+   box-sizing: border-box;
+   font-family:'Times New Roman', Times, serif;
+   text-decoration: none;
+   list-style: none;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 27px 12%;
+    background-color: dodgerblue;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    transition: 0.5s ease;
+}
+.logo:hover{
+    color: red;
+    text-shadow: 0 0 25px forestgreen, 0 0 50px red;
+    transform: scale(1.1);
+}
+span{
+    color: red;
+}
+.navbar a:hover{
+    color: red;
+    border-bottom: 3px solid transparent;
+}
+.navbar a{
+    font-size: 30px;
+    color: black;
+    font-weight: 500;
+    transition: 0.5s ease;
+    margin: 70px;
+}
+.Home{
+   width: 100%; 
+   max-height: 100vh;
+   background-color: white;
+   display: flex;
+   align-items: center;
+   gap: 7em;
+   padding: 30px 12%;
+   margin-top: 120px;
+}
+.Home-Content{
+    max-width: 800px;
+}
+.Home-Content h3{
+    font-size: 45px;
+}
+.Home-Content h1{
+    font-size: 60px;
+    line-height:1.2 ;
+}
+.btn-box{
+   width: 340px; 
+   display: flex;
+   gap: 2em;
+}
+.button1{
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.5s ease;
+}
+.button1:hover{
+    background-color: red;
+    box-shadow: 0 0 25px red;
+    color: white;
+}
+.button2{
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.5s ease;
+}
+.button2:hover{
+    background-color: red;
+    box-shadow: 0 0 25px red;
+    color: white;
+}
+.Stats{
+    background-color: turquoise;
+}
+.Stats h3{
+    font-size: 50px;
+}
+
+.Clubs{
+ background-color:#6CADDF ;     
+}
+
+.Stats{
+    background-color: #002A5A;
+    color: white;
+}
+
+.Stats h1{
+    text-align: center;
+}
+
+.Records h1{
+ text-align:center   
+}
+
+.Records h2{
+    text-align: center;
+}
+
+.Records h3{
+    text-align:center
+}
+
+.Records{
+    background-color: #6CADDF;
+    color:black;
+}
